@@ -121,7 +121,7 @@ def dump_rendered_page(team_id, year=2024, sport="cross-country" ):
 
 if __name__ == "__main__":
     # Set up argument parser
-    parser = argparse.ArgumentParser(description="Dump rendered page content from Athletic.net")
+    parser = argparse.ArgumentParser(description="Dump a season of race times from Athletic.net in csv format.  Currently works for XC only")
     parser.add_argument("--team_id", type=int, help="Team ID of the team on Athletic.net")
     parser.add_argument("--year", type=int, default=2024, help="Year for the team data")
     parser.add_argument("--sport", type=str, default="cross-country", help="Sport type (e.g., cross-country, track-and-field)")
